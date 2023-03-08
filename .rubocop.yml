@@ -1,3 +1,5 @@
+inherit_from: .rubocop_todo.yml
+
 require:
   - rubocop/cop/internal_affairs
   - rubocop-performance
@@ -9,13 +11,24 @@ AllCops:
   TargetRubyVersion: 2.6
   SuggestExtensions: false
 
+Layout/LineLength:
+  Enabled: false
+
+Metrics:
+  Enabled: false
+
+Naming/FileName:
+  Exclude:
+    - lib/rubocop-rspec-extra.rb
+
+Style/Documentation:
+  Enabled: false
+
 Style/StringLiterals:
-  Enabled: true
   EnforcedStyle: double_quotes
 
 Style/StringLiteralsInInterpolation:
-  Enabled: true
   EnforcedStyle: double_quotes
 
-Layout/LineLength:
-  Max: 120
+RSpec/ExampleLength:
+  Enabled: false

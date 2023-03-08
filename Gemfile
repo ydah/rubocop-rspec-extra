@@ -4,9 +4,10 @@ source "https://rubygems.org"
 
 gemspec
 
+gem "bump", require: false
 gem "rake"
-gem "rspec"
-gem "rubocop-performance"
-gem "rubocop-rake"
-gem "rubocop-rspec"
+gem "rspec", "~> 3.11"
+gem "rubocop-performance", "~> 1.7"
+gem "rubocop-rake", "~> 0.6"
+gem "rubocop-rspec", "~> 2.18"
 gem "yard"

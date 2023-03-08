@@ -1,0 +1,5 @@
+name: rubocop-rspec-extra
+title: RuboCop RSpec Extra
+version: ~
+nav:
+  - modules/ROOT/nav.adoc

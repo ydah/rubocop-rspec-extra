@@ -1,0 +1,17 @@
+= RuboCop RSpec Extra
+
+RSpec-specific analysis for your projects, as an extension to
+https://github.com/rubocop/rubocop[RuboCop].
+A place where no one is officially employed, but where useful cops can gather.
+
+RuboCop RSpec Extra follows the https://docs.rubocop.org/rubocop/versioning.html[RuboCop versioning guide].
+In a nutshell, between major versions new cops are introduced in a special `pending` status.
+That means that they won’t be run unless explicitly told otherwise.
+RuboCop will warn on start that certain cops are neither explicitly enabled and disabled.
+On a major version release, all `pending` cops are enabled.
+
+== Project Goals
+
+
+* Simplify the process of adopting new RSpec functionality
+* A collection of cops who are not hired by RuboCop RSpec but are useful when writing test code in RSpec

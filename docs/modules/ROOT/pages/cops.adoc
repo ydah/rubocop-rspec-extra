@@ -3,5 +3,6 @@
 === Department xref:cops_rspec_extra.adoc[RSpec/Extra]
 
 * xref:cops_rspec_extra.adoc#rspecextra/beempty[RSpec/Extra/BeEmpty]
+* xref:cops_rspec_extra.adoc#rspecextra/restrictblocktag[RSpec/Extra/RestrictBlockTag]
 
 // END_COP_LIST

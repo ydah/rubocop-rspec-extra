@@ -5,10 +5,10 @@
 |===
 | Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
 
-| Enabled
+| Pending
 | Yes
 | Yes
-| -
+| <<next>>
 | -
 |===
 
@@ -31,3 +31,58 @@ expect(array).to match_array([])
 # good
 expect(array).to be_empty
 ----
+
+=== References
+
+* https://www.rubydoc.info/gems/rubocop-rspec-extra/RuboCop/Cop/RSpec/Extra/BeEmpty
+
+== RSpec/Extra/RestrictBlockTag
+
+|===
+| Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
+
+| Disabled
+| Yes
+| No
+| <<next>>
+| -
+|===
+
+Restrict to only allowed block tags.
+
+=== Examples
+
+==== AllowTags: ['foo', 'bar']
+
+[source,ruby]
+----
+# bad
+RSpec.describe 'Something', :baz do
+end
+
+# bad
+RSpec.describe 'Something' do
+  context 'when something', baz: :foo do
+  end
+end
+
+# good
+RSpec.describe 'Something', :foo do
+end
+
+# good
+RSpec.describe 'Something' do
+  context 'when something', bar: :foo do
+  end
+end
+----
+
+=== Configurable attributes
+
+|===
+| Name | Default value | Configurable values
+
+| AllowTags
+| `[]`
+| Array
+|===

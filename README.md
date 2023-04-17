@@ -1,43 +1,79 @@
 # Rubocop::Rspec::Extra
 
-TODO: Delete this and the text below, and describe your gem
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubocop/rspec/extra`. To experiment with that code, run `bin/console` for an interactive prompt.
+A RuboCop extension focused on enforcing RSpec. A place where no one is officially employed, but where useful cops can gather.
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+Just install the `rubocop-rspec-extra` gem
 
-Install the gem and add to the application's Gemfile by executing:
-
-```
-$ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+```bash
+gem install rubocop-rspec-extra
 ```
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+or if you use bundler put this in your `Gemfile`
 
-```
-$ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+```bash
+gem 'rubocop-rspec-extra', require: false
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+You need to tell RuboCop to load the RSpec Extra extension. There are two
+ways to do this:
 
-## Development
+### RuboCop configuration file
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+Put this into your `.rubocop.yml`.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+```yaml
+require: rubocop-rspec-extra
+```
+
+Alternatively, use the following array notation when specifying multiple extensions.
+
+```yaml
+require:
+  - rubocop-rspec
+  - rubocop-rspec-extra
+```
+
+Now you can run `rubocop` and it will automatically load the RuboCop RSpec Extra
+cops together with the standard cops.
+
+### Command line
+
+```bash
+rubocop --require rubocop-rspec-extra
+```
+
+### Rake task
+
+```ruby
+RuboCop::RakeTask.new do |task|
+  task.requires << 'rubocop-rspec-extra'
+end
+```
+
+## The Cops
+
+All cops are located under
+[`lib/rubocop/cop/rspec/extra`](lib/rubocop/cop/rspec/extra), and contain
+examples/documentation.
+
+In your `.rubocop.yml`, you may treat the Committee cops just like any other
+cop. For example:
+
+```yaml
+RSpec/Extra/RestrictBlockTag:
+  Exclude:
+    - spec/my_poorly_named_spec_file.rb
+```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/%5BUSERNAME%5D/rubocop-rspec-extra. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/%5BUSERNAME%5D/rubocop-rspec-extra/blob/main/CODE_OF_CONDUCT.md).
+Checkout the [contribution guidelines](.github/CONTRIBUTING.md).
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the Rubocop::Rspec::Extra project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/%5BUSERNAME%5D/rubocop-rspec-extra/blob/main/CODE_OF_CONDUCT.md).
+`rubocop-committee` is MIT licensed. [See the accompanying file](MIT-LICENSE.md) for
+the full text.

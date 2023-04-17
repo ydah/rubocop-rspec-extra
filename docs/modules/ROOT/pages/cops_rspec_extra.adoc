@@ -86,3 +86,42 @@ end
 | `[]`
 | Array
 |===
+
+== RSpec/Extra/RestrictBlockTagValue
+
+|===
+| Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
+
+| Pending
+| Yes
+| No
+| <<next>>
+| -
+|===
+
+Restrict to only allowed block tag value.
+
+=== Examples
+
+==== AllowTagValues: { foo: 'baz' }
+
+[source,ruby]
+----
+# bad
+RSpec.describe 'Something', foo: :bar do
+end
+
+# good
+RSpec.describe 'Something', foo: :baz do
+end
+----
+
+=== Configurable attributes
+
+|===
+| Name | Default value | Configurable values
+
+| AllowTagValues
+| `{}`
+| 
+|===

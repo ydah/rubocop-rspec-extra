@@ -13,3 +13,9 @@ RSpec/Extra/RestrictBlockTag:
   Enabled: false
   VersionAdded: '<<next>>'
   AllowTags: []
+
+RSpec/Extra/RestrictBlockTagValue:
+  Description: 'Restrict to only allowed block tag value.'
+  Enabled: pending
+  VersionAdded: '<<next>>'
+  AllowTagValues: {}

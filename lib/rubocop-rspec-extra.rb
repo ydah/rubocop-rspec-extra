@@ -7,6 +7,7 @@ require_relative "rubocop/rspec/extra/version"
 
 require_relative "rubocop/cop/rspec/extra/be_empty"
 require_relative "rubocop/cop/rspec/extra/restrict_block_tag"
+require_relative "rubocop/cop/rspec/extra/restrict_block_tag_value"
 
 module RuboCop
   module RSpec

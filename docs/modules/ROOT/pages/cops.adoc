@@ -4,5 +4,6 @@
 
 * xref:cops_rspec_extra.adoc#rspecextra/beempty[RSpec/Extra/BeEmpty]
 * xref:cops_rspec_extra.adoc#rspecextra/restrictblocktag[RSpec/Extra/RestrictBlockTag]
+* xref:cops_rspec_extra.adoc#rspecextra/restrictblocktagvalue[RSpec/Extra/RestrictBlockTagValue]
 
 // END_COP_LIST

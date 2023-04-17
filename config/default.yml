@@ -7,3 +7,9 @@ RSpec/Extra/BeEmpty:
   Enabled: pending
   VersionAdded: '<<next>>'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec-extra/RuboCop/Cop/RSpec/Extra/BeEmpty
+
+RSpec/Extra/RestrictBlockTag:
+  Description: 'Restrict to only allowed block tags.'
+  Enabled: false
+  VersionAdded: '<<next>>'
+  AllowTags: []

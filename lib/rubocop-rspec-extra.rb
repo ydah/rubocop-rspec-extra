@@ -6,6 +6,7 @@ require_relative "rubocop/rspec/extra/inject"
 require_relative "rubocop/rspec/extra/version"
 
 require_relative "rubocop/cop/rspec/extra/be_empty"
+require_relative "rubocop/cop/rspec/extra/restrict_block_tag"
 
 module RuboCop
   module RSpec
@@ -18,4 +19,4 @@ module RuboCop
   end
 end
 
-RuboCop::RSpec::Inject.defaults!
+RuboCop::RSpec::Extra::Inject.defaults!

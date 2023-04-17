@@ -1,6 +1,6 @@
 # Rubocop::Rspec::Extra
 
-![GitHub top language](https://img.shields.io/github/languages/top/ydah/rubocop-rspec-extra?color=39ff14) ![GitHub](https://img.shields.io/github/license/ydah/rubocop-rspec-extra) \[![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg)\] [![CI](https://github.com/ydah/rubocop-rspec-extra/actions/workflows/ci.yml/badge.svg)](https://github.com/ydah/rubocop-rspec-extra/actions/workflows/ci.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/6b1f27edd867a4b64661/maintainability)](https://codeclimate.com/github/ydah/rubocop-rspec-extra/maintainability)
+![GitHub top language](https://img.shields.io/github/languages/top/ydah/rubocop-rspec-extra?color=39ff14) ![GitHub](https://img.shields.io/github/license/ydah/rubocop-rspec-extra) ![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen.svg) [![CI](https://github.com/ydah/rubocop-rspec-extra/actions/workflows/ci.yml/badge.svg)](https://github.com/ydah/rubocop-rspec-extra/actions/workflows/ci.yml) [![Maintainability](https://api.codeclimate.com/v1/badges/6b1f27edd867a4b64661/maintainability)](https://codeclimate.com/github/ydah/rubocop-rspec-extra/maintainability)
 
 A [RuboCop](https://github.com/rubocop/rubocop) extension focused on enforcing RSpec. A place where no one is officially employed, but where useful cops can gather.
 

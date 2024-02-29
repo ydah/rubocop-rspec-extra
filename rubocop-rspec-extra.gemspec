@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors = ["ydah"]
   spec.email = ["t.yudai92@gmail.com"]
 
-  spec.summary = "Automatic committee code style checking tool."
+  spec.summary = "A RuboCop extension focused on enforcing RSpec."
   spec.description = <<~DESCRIPTION
-    Automatic committee code style checking tool.
     A RuboCop extension focused on enforcing RSpec.
     A place where no one is officially employed, but where useful cops can gather.
   DESCRIPTION

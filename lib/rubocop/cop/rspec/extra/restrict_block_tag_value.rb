@@ -19,8 +19,10 @@ module RuboCop
           include Metadata
           MSG = "This value is not allowed in this tag. Allowed tag value: %<allow_tag_value>s."
 
-          def on_metadata(_symbols, pairs)
-            offenses = pairs.filter do |pair|
+          def on_metadata(_symbols, hash)
+            return if hash.nil?
+
+            offenses = hash.pairs.filter do |pair|
               allow_tag_values.any? do |k, v|
                 pair.key.value.to_s == k &&
                   pair.value.value.to_s != v

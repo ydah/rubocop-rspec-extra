@@ -30,8 +30,9 @@ module RuboCop
         class RestrictBlockTag < Base
           include Metadata
 
-          def on_metadata(symbols, pairs)
-            offenses = (symbols + pairs.map(&:key)).filter do |symbol|
+          def on_metadata(symbols, hash)
+            symbols += hash.pairs.map(&:key) unless hash.nil?
+            offenses = symbols.filter do |symbol|
               !allow_tags.include?(symbol.value.to_s)
             end
 

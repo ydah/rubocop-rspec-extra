@@ -5,17 +5,17 @@ RSpec/Extra:
 RSpec/Extra/BeEmpty:
   Description: Prefer using `be_empty` when checking for an empty array.
   Enabled: pending
-  VersionAdded: '<<next>>'
+  VersionAdded: '0.1'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec-extra/RuboCop/Cop/RSpec/Extra/BeEmpty
 
 RSpec/Extra/RestrictBlockTag:
   Description: 'Restrict to only allowed block tags.'
   Enabled: false
-  VersionAdded: '<<next>>'
+  VersionAdded: '0.1'
   AllowTags: []
 
 RSpec/Extra/RestrictBlockTagValue:
   Description: 'Restrict to only allowed block tag value.'
   Enabled: pending
-  VersionAdded: '<<next>>'
+  VersionAdded: '0.1'
   AllowTagValues: {}

@@ -62,7 +62,7 @@ All cops are located under
 [`lib/rubocop/cop/rspec/extra`](lib/rubocop/cop/rspec/extra), and contain
 examples/documentation.
 
-In your `.rubocop.yml`, you may treat the Committee cops just like any other
+In your `.rubocop.yml`, you may treat the RSpec extra cops just like any other
 cop. For example:
 
 ```yaml
@@ -77,5 +77,5 @@ Checkout the [contribution guidelines](.github/CONTRIBUTING.md).
 
 ## License
 
-`rubocop-committee` is MIT licensed. [See the accompanying file](MIT-LICENSE.md) for
+`rubocop-rspec-extra` is MIT licensed. [See the accompanying file](MIT-LICENSE.md) for
 the full text.

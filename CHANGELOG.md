@@ -2,6 +2,7 @@
 
 - Fix an error for `RSpec/Extra/RestrictBlockTag`. ([@ydah])
 - Fix an error for `RSpec/Extra/RestrictBlockTagValue`. ([@ydah])
+- Drop Ruby 2.6 support. ([@ydah])
 
 ## 0.1.0 - 2023-04-18
 

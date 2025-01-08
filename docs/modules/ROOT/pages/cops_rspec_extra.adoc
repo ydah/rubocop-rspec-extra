@@ -6,6 +6,7 @@
 
 = RSpec/Extra
 
+[#rspecextrabeempty]
 == RSpec/Extra/BeEmpty
 
 |===
@@ -14,12 +15,13 @@
 | Pending
 | Yes
 | Always
-| 0.2
+| 0.1
 | -
 |===
 
 Prefer using `be_empty` when checking for an empty array.
 
+[#examples-rspecextrabeempty]
 === Examples
 
 [source,ruby]
@@ -38,10 +40,12 @@ expect(array).to match_array([])
 expect(array).to be_empty
 ----
 
+[#references-rspecextrabeempty]
 === References
 
 * https://www.rubydoc.info/gems/rubocop-rspec-extra/RuboCop/Cop/RSpec/Extra/BeEmpty
 
+[#rspecextrarestrictblocktag]
 == RSpec/Extra/RestrictBlockTag
 
 |===
@@ -50,14 +54,16 @@ expect(array).to be_empty
 | Disabled
 | Yes
 | No
-| 0.2
+| 0.1
 | -
 |===
 
 Restrict to only allowed block tags.
 
+[#examples-rspecextrarestrictblocktag]
 === Examples
 
+[#allowtags_-__foo__-_bar__-rspecextrarestrictblocktag]
 ==== AllowTags: ['foo', 'bar']
 
 [source,ruby]
@@ -83,6 +89,7 @@ RSpec.describe 'Something' do
 end
 ----
 
+[#configurable-attributes-rspecextrarestrictblocktag]
 === Configurable attributes
 
 |===
@@ -93,6 +100,7 @@ end
 | Array
 |===
 
+[#rspecextrarestrictblocktagvalue]
 == RSpec/Extra/RestrictBlockTagValue
 
 |===
@@ -101,14 +109,16 @@ end
 | Pending
 | Yes
 | No
-| 0.2
+| 0.1
 | -
 |===
 
 Restrict to only allowed block tag value.
 
+[#examples-rspecextrarestrictblocktagvalue]
 === Examples
 
+[#allowtagvalues_-_-foo_-_baz_-_-rspecextrarestrictblocktagvalue]
 ==== AllowTagValues: { foo: 'baz' }
 
 [source,ruby]
@@ -122,6 +132,7 @@ RSpec.describe 'Something', foo: :baz do
 end
 ----
 
+[#configurable-attributes-rspecextrarestrictblocktagvalue]
 === Configurable attributes
 
 |===

@@ -2,8 +2,8 @@
 
 === Department xref:cops_rspec_extra.adoc[RSpec/Extra]
 
-* xref:cops_rspec_extra.adoc#rspecextra/beempty[RSpec/Extra/BeEmpty]
-* xref:cops_rspec_extra.adoc#rspecextra/restrictblocktag[RSpec/Extra/RestrictBlockTag]
-* xref:cops_rspec_extra.adoc#rspecextra/restrictblocktagvalue[RSpec/Extra/RestrictBlockTagValue]
+* xref:cops_rspec_extra.adoc#rspecextrabeempty[RSpec/Extra/BeEmpty]
+* xref:cops_rspec_extra.adoc#rspecextrarestrictblocktag[RSpec/Extra/RestrictBlockTag]
+* xref:cops_rspec_extra.adoc#rspecextrarestrictblocktagvalue[RSpec/Extra/RestrictBlockTagValue]
 
 // END_COP_LIST

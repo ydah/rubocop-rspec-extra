@@ -13,7 +13,7 @@ RSpec.describe RuboCop::Cop::RSpec::Extra::RestrictBlockTag, :config do
       RUBY
     end
 
-    it "register an offense when using allowed tags pair" do
+    it "registers an offense when using allowed tags pair" do
       expect_offense(<<~RUBY)
         RSpec.describe 'Something', :qux, foo: :bar do
                                           ^^^ This tag is not allowed. Allowed tags: bar, qux.

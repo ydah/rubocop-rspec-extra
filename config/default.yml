@@ -11,7 +11,7 @@ RSpec/Extra/BeEmpty:
 RSpec/Extra/FlatExamples:
   Description: 'Restrict unnecessary nesting by example groups.'
   Enabled: false
-  VersionAdded: '<<next>>'
+  VersionAdded: '0.3'
 
 RSpec/Extra/RestrictBlockTag:
   Description: 'Restrict to only allowed block tags.'

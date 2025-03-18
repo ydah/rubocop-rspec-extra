@@ -12,10 +12,10 @@
 |===
 | Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
 
-| Pending
+| Enabled
 | Yes
 | Always
-| 0.1
+| -
 | -
 |===
 
@@ -40,10 +40,36 @@ expect(array).to match_array([])
 expect(array).to be_empty
 ----
 
-[#references-rspecextrabeempty]
-=== References
+[#rspecextraflatexamples]
+== RSpec/Extra/FlatExamples
 
-* https://www.rubydoc.info/gems/rubocop-rspec-extra/RuboCop/Cop/RSpec/Extra/BeEmpty
+|===
+| Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
+
+| Enabled
+| Yes
+| No
+| -
+| -
+|===
+
+Restrict unnecessary nesting by example groups.
+
+[#examples-rspecextraflatexamples]
+=== Examples
+
+[source,ruby]
+----
+# bad
+context 'when condition' do
+  it 'tests something' do
+  end
+end
+
+# good
+it 'tests something when condition' do
+end
+----
 
 [#rspecextrarestrictblocktag]
 == RSpec/Extra/RestrictBlockTag
@@ -51,10 +77,10 @@ expect(array).to be_empty
 |===
 | Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
 
-| Disabled
+| Enabled
 | Yes
 | No
-| 0.1
+| -
 | -
 |===
 
@@ -89,27 +115,16 @@ RSpec.describe 'Something' do
 end
 ----
 
-[#configurable-attributes-rspecextrarestrictblocktag]
-=== Configurable attributes
-
-|===
-| Name | Default value | Configurable values
-
-| AllowTags
-| `[]`
-| Array
-|===
-
 [#rspecextrarestrictblocktagvalue]
 == RSpec/Extra/RestrictBlockTagValue
 
 |===
 | Enabled by default | Safe | Supports autocorrection | Version Added | Version Changed
 
-| Pending
+| Enabled
 | Yes
 | No
-| 0.1
+| -
 | -
 |===
 
@@ -131,14 +146,3 @@ end
 RSpec.describe 'Something', foo: :baz do
 end
 ----
-
-[#configurable-attributes-rspecextrarestrictblocktagvalue]
-=== Configurable attributes
-
-|===
-| Name | Default value | Configurable values
-
-| AllowTagValues
-| `{}`
-| 
-|===

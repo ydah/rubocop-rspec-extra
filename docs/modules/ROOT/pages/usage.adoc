@@ -8,13 +8,13 @@ There are some ways to do this:
 Put this into your `.rubocop.yml`:
 
 ----
-require: rubocop-rspec-extra
+plugins: rubocop-rspec-extra
 ----
 
 or, if you are using several extensions:
 
 ----
-require:
+plugins:
   - rubocop-rspec
   - rubocop-rspec-extra
 ----
@@ -24,7 +24,7 @@ cops together with the standard cops.
 
 [source,bash]
 ----
-$ rubocop --require rubocop-rspec-extra
+$ rubocop --plugins rubocop-rspec-extra
 ----
 
 == Rake task
@@ -32,6 +32,8 @@ $ rubocop --require rubocop-rspec-extra
 [source,ruby]
 ----
 RuboCop::RakeTask.new do |task|
-  task.requires << 'rubocop-rspec-extra'
+  task.plugins << 'rubocop-rspec-extra'
 end
 ----
+
+NOTE: The plugin system is supported in RuboCop 1.72+. In earlier versions, use `require` instead of `plugins`.

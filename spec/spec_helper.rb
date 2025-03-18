@@ -5,7 +5,6 @@ require "rubocop/rspec/support"
 require "rubocop/rspec/shared_contexts/default_rspec_language_config_context"
 
 RSpec.configure do |config|
-  config.include RuboCop::RSpec::ExpectOffense
   config.order = :random
   config.disable_monkey_patching!
   config.raise_errors_for_deprecations!

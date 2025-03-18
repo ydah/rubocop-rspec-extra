@@ -57,7 +57,7 @@ module RuboCop
             )
           PATTERN
 
-          def on_send(node)
+          def on_send(node) # rubocop:disable InternalAffairs/OnSendWithoutOnCSend
             expect_array_empty_true?(node.parent) do |actual, expect|
               register_offense(actual, expect)
             end

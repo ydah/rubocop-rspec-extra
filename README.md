@@ -28,13 +28,13 @@ ways to do this:
 Put this into your `.rubocop.yml`.
 
 ```yaml
-require: rubocop-rspec-extra
+plugins: rubocop-rspec-extra
 ```
 
 Alternatively, use the following array notation when specifying multiple extensions.
 
 ```yaml
-require:
+plugins:
   - rubocop-rspec
   - rubocop-rspec-extra
 ```
@@ -42,17 +42,20 @@ require:
 Now you can run `rubocop` and it will automatically load the RuboCop RSpec Extra
 cops together with the standard cops.
 
+> [!NOTE]
+> The plugin system is supported in RuboCop 1.72+. In earlier versions, use `require` instead of `plugins`.
+
 ### Command line
 
 ```bash
-rubocop --require rubocop-rspec-extra
+rubocop --plugins rubocop-rspec-extra
 ```
 
 ### Rake task
 
 ```ruby
 RuboCop::RakeTask.new do |task|
-  task.requires << 'rubocop-rspec-extra'
+  task.plugins << 'rubocop-rspec-extra'
 end
 ```
 

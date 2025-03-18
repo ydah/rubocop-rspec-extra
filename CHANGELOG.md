@@ -2,6 +2,7 @@
 
 ## Master (Unreleased)
 
+- Pluginfy RuboCop RSpec Extra. ([@ydah])
 - Add `RSpec/Extra/FlatExamples` cop. ([@ydah])
 
 ## 0.2.0 (2024-03-01)

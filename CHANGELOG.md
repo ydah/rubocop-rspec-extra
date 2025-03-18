@@ -2,6 +2,8 @@
 
 ## Master (Unreleased)
 
+- Add `RSpec/Extra/FlatExamples` cop. ([@ydah])
+
 ## 0.2.0 (2024-03-01)
 
 - Fix an error for `RSpec/Extra/RestrictBlockTag`. ([@ydah])

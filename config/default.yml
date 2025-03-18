@@ -8,6 +8,11 @@ RSpec/Extra/BeEmpty:
   VersionAdded: '0.1'
   Reference: https://www.rubydoc.info/gems/rubocop-rspec-extra/RuboCop/Cop/RSpec/Extra/BeEmpty
 
+RSpec/Extra/FlatExamples:
+  Description: 'Restrict unnecessary nesting by example groups.'
+  Enabled: false
+  VersionAdded: '<<next>>'
+
 RSpec/Extra/RestrictBlockTag:
   Description: 'Restrict to only allowed block tags.'
   Enabled: false

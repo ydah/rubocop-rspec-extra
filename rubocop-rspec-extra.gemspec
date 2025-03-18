@@ -5,7 +5,7 @@ require_relative "lib/rubocop/rspec/extra/version"
 Gem::Specification.new do |spec|
   spec.name = "rubocop-rspec-extra"
   spec.version = Rubocop::RSpec::Extra::VERSION
-  spec.authors = ["ydah"]
+  spec.authors = ["Yudai Takada"]
   spec.email = ["t.yudai92@gmail.com"]
 
   spec.summary = "A RuboCop extension focused on enforcing RSpec."

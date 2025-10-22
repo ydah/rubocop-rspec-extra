@@ -17,6 +17,7 @@ module RuboCop
         #
         class RestrictBlockTagValue < Base
           include Metadata
+
           MSG = "This value is not allowed in this tag. Allowed tag value: %<allow_tag_value>s."
 
           def on_metadata(_symbols, hash)
